@@ -210,6 +210,12 @@ a:hover, a:active, a:focus {
     background: #ffffff;
     text-align: center;
 }
+.gallery-info h3 {
+    font-size: 14px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin: 0;
+}
 #about {
     text-align: center;
 }
@@ -384,7 +390,7 @@ a:hover, a:active, a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0);
 }
 
 #home video {
@@ -521,11 +527,22 @@ progress{
 /*---------------------------------------
    TEAM             
 -----------------------------------------*/
+#team {
+    text-align: center;
+    padding-top: 75px;
+}
 
 #team .item {
   display: block;
   width: 100%;
   margin-bottom: 22px;
+}
+
+.team-info h3 {
+    font-size: 14px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 #team h3,
@@ -581,14 +598,35 @@ progress{
 
 
 /*---------------------------------------
+ BANNER             
+-----------------------------------------*/
+
+#banner {
+    height: 300px;
+    background: url(../images/Galeria/5.jpg) fixed;
+    background-size: cover;
+}
+
+
+/*---------------------------------------
   CONTACT             
 -----------------------------------------*/
 
 #contact {
-  background: url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
+  background: lightgray;
   background-size: cover;
   background-position: center center;
+    text-align: center;
+    padding-top: 75px;
+    
 }
+#contact h1 {
+    font-size: 14px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
 
 #contact-form {
   padding-top: 22px;
@@ -707,12 +745,17 @@ footer .copyright-text {
 
   #home {
     padding-top: 0em;
+      text-align: center;
   }
 
   #about {
     padding-top: 120px;
     padding-bottom: 100px;
   }
+    #about h1 {
+    font-size: 18px;
+    line-height: 30px;
+}
 
   .project-info {
     padding: 4em 0;
@@ -762,12 +805,18 @@ footer .copyright-text {
 
   #home {
     height: 100vh;
+      text-align: center;
   }
 
   .about-info h3 {
     font-size: 12px;
     letter-spacing: 6px;
   }
+        #about h1 {
+    font-size: 14px;
+    line-height: 25px;
+}
+
 
   .project-info {
     padding: 5em 0;
