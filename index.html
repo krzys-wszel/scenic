@@ -52,7 +52,7 @@ http://www.tooplate.com/view/2099-scenic
                     <span class="icon icon-bar"></span>
                </button>
                <!-- lOGO -->
-               <a href="index.html" class="navbar-brand">Scenic</a>
+               <a href="index.html" class="navbar-brand">HappyTime</a>
           </div>
 
           <!-- MENU LINKS -->
@@ -89,13 +89,23 @@ http://www.tooplate.com/view/2099-scenic
           </div>
      </div>
 
-     <!-- Video -->
-     <video controls="" autoplay="" loop="" muted>
-          <source src="videos/video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-     </video>
-</section>
+    <!-- Video -->
+        <!--<video    src="videos/video7.mp4" type="video/mp4" codecs="avc1.64001E, mp4a.40.2" autoplay="" controls=""> </video>-->
+        <video>
+            <source src="videos/video7.mp4" type="video/mp4">
+            
+            <source src="videos/video.mp4" type="video/ogg">
+             
+        </video>
 
+        <nav>
+            <button id="start" onclick="v.play()">Play</button>
+            <button id="stop" onclick="v.currentTime=0;v.pause()">Stop</button>
+            <button id="pause" onclick="v.pause()">Pause</button>
+            <button id="mute" onclick="v.muted = !v.muted">Mute</button>
+            <progress value="0" max="100" step="0.1"></progress>
+        </nav>
+</section>
 
 <!-- ABOUT -->
 <section id="about" class="parallax-section">
@@ -377,6 +387,15 @@ http://www.tooplate.com/view/2099-scenic
 <script src="js/modernizr.custom.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/custom.js"></script>
+ <script>
+        var v = document.getElementsByTagName('video')[0];
+      
+      v.addEventListener('timeupdate', function()
+      {
+        var p = document.getElementsByTagName('progress')[0];
+        p.value = 100*this.currentTime/this.duration;
+      });
+    </script>
 
 </body>
 </html>

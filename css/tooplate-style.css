@@ -390,6 +390,46 @@ a:hover, a:active, a:focus {
   transition: 1s opacity;
 }
 
+/*---------------------------------------
+  sterowanie video            
+-----------------------------------------*/
+ 
+nav{
+        width: 500px;
+        text-align: center;
+}
+
+nav button{
+        background: none;
+        border: 1px solid white;
+        position: relative;
+        top: -70px;
+        width: 10%;
+        height: 18%;
+        color: white;
+        border-radius: 50px;
+        background: black;
+        opacity: 0.5;
+        z-index: 1;
+}
+
+nav button:hover{
+        opacity: 1;
+        cursor: hand;
+}
+
+progress{
+        clear: both;
+        display: block;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        top: -60px;
+        height: 5px;
+        z-index: 0;
+        opacity: 0.5;
+        
+}
 
 /*---------------------------------------
   ABOUT              
